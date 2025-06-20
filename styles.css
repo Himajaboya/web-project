@@ -1,0 +1,99 @@
+body {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+    padding: 0;
+    background:cadetblue;
+    color: #fff;
+    text-align: center;
+}
+
+header {
+    background:crimson;
+    padding: 20px;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color:aqua;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.book-btn, .home-btn, .submit-btn {
+    padding: 15px 30px;
+    background:deeppink;
+    color: white;
+    text-decoration:wavy;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+/* --- Fixes for Event Images & Layout --- */
+.event-types {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center align the content */
+    gap: 20px; /* Add spacing between items */
+    margin-top: 20px;
+}
+
+.event {
+    position: relative;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow:grey;
+    transition: transform 0.3s ease-in-out;
+}
+
+.event img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+.event h3 {
+    margin-top: 10px;
+    font-size: 24px;
+}
+.form-section {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    height: 100vh; /* Makes the form stay in the middle of the screen */
+}
+form {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 400px;
+    text-align: left;
+    display: flex;
+    flex-direction:column;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    
+}
+.event p {
+    font-size: 16px;
+}
+
+/* Hover Effect */
+.event:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.4);
+}
